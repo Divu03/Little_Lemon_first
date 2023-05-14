@@ -26,7 +26,7 @@ import androidx.compose.ui.unit.sp
 
 @Preview
 @Composable
-fun Homepage(navController: Any) {
+fun Sndpage(){
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -36,7 +36,7 @@ fun Homepage(navController: Any) {
     )
     {
         Text(
-            text = "Little Lemon",
+            text = "Second Page",
             fontSize = 32.sp,
             color = Color(0xFFF4CE14)
         )
@@ -48,7 +48,7 @@ fun Homepage(navController: Any) {
         Row{
             Button(
                 onClick = { /*TODO*/ },
-                border = BorderStroke(1.dp,Color.Red),
+                border = BorderStroke(1.dp, Color.Red),
                 shape = RoundedCornerShape(10.dp),
                 colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray)
             )
@@ -62,7 +62,7 @@ fun Homepage(navController: Any) {
                 Modifier.blur(1.dp,1.dp, BlurredEdgeTreatment.Rectangle)
 
             )
-            Text(text = "You can see here what i am trying to do *cheeky face*",
+            Text(text = "Hay there how are you",
                 Modifier.padding(10.dp)
             )
         }

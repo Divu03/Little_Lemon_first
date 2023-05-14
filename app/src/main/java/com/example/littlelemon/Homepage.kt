@@ -20,13 +20,12 @@ import androidx.compose.ui.draw.blur
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 
-@Preview
 @Composable
-fun Homepage(navController: Any) {
+fun Homepage(navController: NavController) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -47,7 +46,9 @@ fun Homepage(navController: Any) {
         )
         Row{
             Button(
-                onClick = { /*TODO*/ },
+                onClick = {
+                          navController.navigate(Sndpage.route)
+                },
                 border = BorderStroke(1.dp,Color.Red),
                 shape = RoundedCornerShape(10.dp),
                 colors = ButtonDefaults.buttonColors(backgroundColor = Color.Gray)
